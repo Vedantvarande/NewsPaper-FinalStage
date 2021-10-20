@@ -16,7 +16,7 @@ const DiscoverScreen = () =>{
         <View style={styles.discover}>
             <Search />
       <Text
-        style={{ ...styles.subtitle, color:"white"}}
+        style={{ ...styles.subtitle, color:darkTheme ? "white" : "black" }}
       >
         Categories
       </Text>
@@ -31,7 +31,7 @@ const DiscoverScreen = () =>{
             >
               <Image source={{ uri: item.pic }} style={styles.categoryImage} />
               <Text
-                style={{ ...styles.name, color: "white"}}
+                style={{ ...styles.name, color: darkTheme ? "white" : "black"}}
               >
                 {item.name}
               </Text>
@@ -45,7 +45,7 @@ const DiscoverScreen = () =>{
         inactiveSlideOpacity={1}
       />
       <Text
-        style={{ ...styles.subtitle, color:"white"}}
+        style={{ ...styles.subtitle, color: darkTheme ? "white" : "black" }}
       >
         Sources
       </Text>
